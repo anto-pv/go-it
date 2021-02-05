@@ -1,10 +1,17 @@
 import React from 'react';
+import '../styles/home.scss';
 import Header from '../components/header';
+import Landing from '../components/landing';
+import Contact from '../components/contactus';
+import About from '../components/aboutus';
+
 const Home = () => {
     return (
-        <div>
+        <div id ="home">
             <Header/>
-            Home
+            <Landing/>
+            <About/>
+            <Contact />
         </div>
     );
 };

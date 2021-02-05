@@ -1,0 +1,21 @@
+@import './components/header.scss';
+@import './components/landing.scss';
+@import './components/aboutus.scss';
+@import './components/contact.scss';
+#home{
+    background-color: #61dafb;
+@media (prefers-reduced-motion: no-preference) {
+    .svgim {
+        color: rgb(236, 236, 49);
+        animation-name: logo;
+        animation: duration 5s;
+        animation-iteration-count:infinite;
+    }
+}
+@keyframes logo {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
+}
