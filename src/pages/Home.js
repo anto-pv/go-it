@@ -4,6 +4,7 @@ import Header from '../components/header';
 import Landing from '../components/landing';
 import Contact from '../components/contactus';
 import About from '../components/aboutus';
+import Patner from '../components/patners';
 
 const Home = () => {
     return (
@@ -11,7 +12,10 @@ const Home = () => {
             <Header/>
             <Landing/>
             <About/>
+            <Patner/>
             <Contact />
+            <footer>
+            </footer>
         </div>
     );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import mimage from './mainimage.svg';
+import mimage from './svg/mainimage.svg';
 
 const Landing = () => {
     return (

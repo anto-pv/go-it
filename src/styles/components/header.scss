@@ -1,9 +1,5 @@
 #header{
     position: absolute;
-    width: 100%;
-    height: 107px;
-    left: 0px;
-    top: 0px;
     #logo{
         position: absolute;
         width: 112px;
@@ -29,5 +25,13 @@
             top: 17.63%;
             bottom: 21.43%;
         }
+    }
+    .heads{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
     }
 }
