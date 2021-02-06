@@ -4,12 +4,11 @@ import mimage from './svg/mainimage.svg';
 const Landing = () => {
     return (
         <div id="landing">
-            <p className="maintext">Get the right<br/>products to market,<br/>faster<br/>
+            <p className="maintext">Learn the very Technical Skills redesigning the world!
             <span className="blacktext">
             Modern Manufacturing &amp;<br/>Inventive Design Internship</span><span className="small">
-            <br/>Everyday carry direct trade post-ironic iPhone meggings godard
-            actually food truck kale chips hexagon poutine.</span></p>
-            <button className="btn">Register</button>
+            <br/>Upcoming Training Programs Virtual internship</span></p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdHXwn-VPj6_dWlFl40KXVunNE7CIVkeTeJHS3dATuWPGxByw/viewform" className="btn">Register</a>
             <img src={mimage} className="mimage" alt="main loading" />
         </div>
     );

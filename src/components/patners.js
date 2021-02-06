@@ -10,11 +10,12 @@ const Patner = () => {
         <div id="patner">
             <span className="heading">Patners</span>
             <div className="patner">
-            <img src={bajaj} alt="bajaj"/>
-            <img src={bigd} alt="bajaj"/>
-            <img src={conf} alt="bajaj"/>
-            <img src={fb} alt="bajaj"/>
-            <img src={honda} alt="bajaj"/>
+                <div className="column">
+                <img src={bajaj} alt="bajaj"/>
+                <img src={bigd} alt="bajaj"/>
+                <img src={conf} alt="bajaj"/>
+                <img src={fb} alt="bajaj"/>
+                <img src={honda} alt="bajaj"/></div>
             </div> 
         </div>
     );

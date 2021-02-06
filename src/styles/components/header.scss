@@ -34,4 +34,19 @@
         line-height: 21px;
         color: #000000;
     }
+    .container-fluid{
+        width: 100%;
+        @include respond(tab-land) {
+            size: 65%;
+            left: 40%;
+        }
+        @include respond(tab-port) {
+            width: 60%;
+            position: absolute;
+        }
+        @include respond(phone) {
+            width: 40%;
+            top: 10.79%;
+        }
+    }
 }

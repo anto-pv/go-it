@@ -15,6 +15,7 @@ const Home = () => {
             <Patner/>
             <Contact />
             <footer>
+                <center><a href="#header" className="up">^</a></center>
             </footer>
         </div>
     );

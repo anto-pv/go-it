@@ -18,8 +18,19 @@
         color: #007CC7;
     }
     .patner{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         position: absolute;
         top: 376px;
-        left:200px;
+        width: 80%;
+        left:10%;
+    }
+    .column{
+        flex: 100%;
+    }
+    .column img{
+        margin: 3% 4% 3% 4%;
+        vertical-align: middle;
     }
 }

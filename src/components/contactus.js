@@ -8,9 +8,9 @@ const Contact = () => {
         <div id="contact">
             <span className="heading">Contact&nbsp;Us</span> 
             <div className="frame">
-                <img src={mail} className="mail" alt="mail"/>goitinc@gmail.com
-                <img src={linkedin} className="linkedin" alt="linkedin"/>goitinc
-                <img src={phone} className="phone" alt="phone"/>9656987236
+                <div className="mail" ><img src={mail}alt="mail"/><span className="texts">goitinternships@gmail.com</span></div>
+                <div className="linkedin" ><img src={linkedin}alt="linkedin"/><a className="texts" href="https://linkedin.com">goitinc</a></div>
+                <div className="phone" ><img src={phone}alt="phone"/><span className="texts">9656987236</span></div>
             </div>
         </div>
     );
