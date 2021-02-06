@@ -1,27 +1,13 @@
 #patner{
-    position: absolute;
     width: 100%;
-    height: 889px;
-    left: 4px;
-    top: 2095px;
     .heading{
-        position: absolute;
-        width: 12.3%;
-        height: 56px;
-        left: 42.9%;
-        top: 72px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 48px;
-        line-height: 56px;
-        color: #007CC7;
+        padding: 3% 0 3% 0;
+        @include maintext;
     }
     .patner{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        position: absolute;
         top: 376px;
         width: 80%;
         left:10%;

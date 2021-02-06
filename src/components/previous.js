@@ -3,7 +3,7 @@ import React from 'react';
 const Previous = () => {
     return (
         <div id="previous">
-            Previous
+            <center>Previous</center>
         </div>
     );
 };

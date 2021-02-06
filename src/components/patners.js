@@ -8,7 +8,7 @@ import honda from './svg/honda 1.png';
 const Patner = () => {
     return (
         <div id="patner">
-            <span className="heading">Patners</span>
+            <center className="heading">Patners</center>
             <div className="patner">
                 <div className="column">
                 <img src={bajaj} alt="bajaj"/>

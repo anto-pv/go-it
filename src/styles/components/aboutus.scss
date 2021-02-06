@@ -1,57 +1,29 @@
 #aboutus{
-    position: absolute;
     width: 100%;
-    height: 1043px;
-    left: 0px;
-    top: 1052px;
     background: #EFEFEF;
+    padding-bottom: 300px;
+    @include respond(tab-land) {
+        padding-bottom: 250px;
+    }
+    @include respond(tab-port) {
+        padding-bottom: 150px;
+    }
+    @include respond(phone) {
+        padding-bottom: 100px;
+    }
     .about{
-        position: absolute;
-        left: 46%;
-        top: 113px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 48px;
-        line-height: 56px;
-        color: #007CC7;
+        padding: 3% 0 3% 0;
+        @include maintext;
     }
     .shape{
-        position: absolute;
-        left: 76.5%;
-        top: -7%;
-        @include respond(tab-port) {
-            display: none;
-        }
-        @include respond(phone) {
-            display: none;
-        }
+        width: 50%;
+        height: 50%;
+        float: right;
+        padding: 5% 0 0 0;
     }
     .abimage{
-        position: absolute;
-        width: 720px;
-        height: 402px;
-        left: 147px;
-        top:20.8%;
-    }
-    .smile{
-        position: absolute;
-        width: 86px;
-        height: 86px;
-        left: 40%;
-        top: 870px;
-    }
-    .happy{
-        position: absolute;
-        width: 229px;
-        height: 42px;
-        left: 48.7%;
-        top: 892px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 36px;
-        line-height: 42px;
-        color: #1B1B1E;
+        width: 33%;
+        height: 33%;
+        padding: 5% 0 0 6%;
     }
 }

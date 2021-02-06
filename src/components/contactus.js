@@ -6,7 +6,7 @@ import mail from './svg/mail.svg';
 const Contact = () => {
     return (
         <div id="contact">
-            <span className="heading">Contact&nbsp;Us</span> 
+            <center className="heading">Contact&nbsp;Us</center> 
             <div className="frame">
                 <div className="mail" ><img src={mail}alt="mail"/><span className="texts">goitinternships@gmail.com</span></div>
                 <div className="linkedin" ><img src={linkedin}alt="linkedin"/><a className="texts" href="https://linkedin.com">goitinc</a></div>
