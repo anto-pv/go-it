@@ -1,52 +1,23 @@
 #header{
-    position: absolute;
-    #logo{
-        position: absolute;
-        width: 112px;
-        height: 56px;
-        left: 1.72%;
-        top: 16.76%;
-        color: #007CC7;
-        .go-{
-            left: 1.72%;
-            right: 30.96%;
-            top: 16.76%;
-            bottom: 20.59%;
-        }
-        .i{
-            left: 73.77%;
-            right: 20.36%;
-            top: 30.7%;
-            bottom: 21.43%;
-        }
-        .T{
-            left: 73.07%;
-            right: 1.46%;
-            top: 17.63%;
-            bottom: 21.43%;
-        }
-    }
-    .heads{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 21px;
-        color: #000000;
-    }
     .container-fluid{
         width: 100%;
-        @include respond(tab-land) {
-            size: 65%;
-            left: 40%;
+        padding: 0 0 0 0;
+        .navbar-toggler{
+            margin-right: 25px;
         }
-        @include respond(tab-port) {
-            width: 60%;
-            position: absolute;
+        #navbarSupportedContent{
+            margin-left: 40%;
+            justify-content: space-evenly;
+            font-family: Roboto;
+            font-weight: bolder;
+            font-size: 18px;
+            line-height: 21px;
+            color: #000000;
         }
-        @include respond(phone) {
-            width: 40%;
-            top: 10.79%;
-        }
+    }
+    #logo{
+        position: relative;
+        height: 56px;
+        padding-left: 3%;
     }
 }

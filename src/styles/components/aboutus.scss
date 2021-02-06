@@ -20,6 +20,12 @@
         position: absolute;
         left: 76.5%;
         top: -7%;
+        @include respond(tab-port) {
+            display: none;
+        }
+        @include respond(phone) {
+            display: none;
+        }
     }
     .abimage{
         position: absolute;
