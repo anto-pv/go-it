@@ -3,32 +3,81 @@
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
     background: radial-gradient(50% 50% at 50% 50%, rgba(0, 124, 199, 0.78) 0%, #007CC7 100%);
-    .text{
-        position: relative;
-        padding: 2% 0 0 8%;
-        size: 90%;
+    display: flex;
+    flex-direction: row;
+    @include respond(tab-port) {
+        flex-direction: column;
     }
-    .btn{
-        float: bottom;
-        width: 206px;
-        height: 54.94px;
-        background: #FFAD05;
-        border-radius: 8px;
-        .btn{
-            padding: auto;
+    @include respond(phone) {
+        flex-direction: column;
+    }
+    .register{
+        display: flex;
+        flex-direction: column;
+        float: left;
+        padding: 5% 0 5% 5%;
+        .text{
+            position: relative;
+            padding: 2% 0 0 8%;
+            size: 85%;
+            @include respond(big-desktop) {
+                width: 90%;
+                height: 90%;
+            }
+            @include respond(tab-land) {
+                width: 70%;
+                height: 70%;
+            }
+            @include respond(tab-port) {
+                width: 60%;
+                height: 60%;
+            }
+            @include respond(phone) {
+                width: 60%;
+                height: 60%;
+            }
+        }
+        a{
+            margin: 5% 0 0 7%;
+            width: 200px;
+            height: 49.94px;
+            background: #FFAD05;
+            border-radius: 4px;
+            font-weight: bolder;
+            font-size: 19px;
+            @include respond(tab-port) {
+                width: 150px;
+                height: 39.94px;
+                font-size: 15px;
+            }
+            @include respond(phone) {
+                width: 100px;
+                height: 29.94px;
+                font-size: 9px;
+            }
         }
     }
     .mimage{
-        position: relative;
         padding: 10% 0 3% 10%;
+        @include respond(big-desktop) {
+            width: 70%;
+            height: 70%;
+            padding: 10% 0 3% 15%;
+        }
         @include respond(tab-land) {
-            padding: 0 0 5% 10%;
+            width: 50%;
+            height: 50%;
+            padding: 15% 0 5% 7%;
         }
         @include respond(tab-port) {
-            padding: 0 0 5% 10%;
+            width: 80%;
+            height: 80%;
+            padding: 0 0 5% 5%;
         }
         @include respond(phone) {
-            padding: 0 0 5% 10%;
+            width: 70%;
+            height: 70%;
+            padding: 0 0 5% 5%;
         }
     }
     

@@ -8,10 +8,36 @@
     }
     .frame{
         display: flex;
-        flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 2% 14% 4% 14%;
+        padding: 2% 10% 4% 10%;
+        @include respond(tab-port) {
+            flex-direction: column;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            img{
+                width: 150px;
+                height: 150px;
+            }
+            .texts{
+                font-size: 15px;
+                padding:  0 9px 0 0;
+            }
+        }
+        @include respond(phone) {
+            flex-direction: column;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            img{
+                width: 150px;
+                height: 150px;
+                padding: 1% 0 0 0;
+            }
+            .texts{
+                font-size: 15px;
+                padding:  0 12px 0 0;
+            }
+        }
         @mixin texts(){
             display: flex;
             flex-direction: column;
@@ -21,23 +47,48 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 18px;
+            font-size: 20px;
             line-height: 15px;
             color: #F9F4F5;
         }
+        
         .mail{
+            width: 100px;
+            height: 100px;
+            img{
+                width: 90px;
+                height: 90px;
+            }
             .texts{
                 @include texts();
+                padding:  4px 12px 8px 0;
+                @include resp();
             }
         }
         .linkedin{
+            width: 100px;
+            height: 100px;
+            img{
+                width: 70px;
+                height: 70px;
+            }
             .texts{
                 @include texts();
+                padding:  25px 25px 8px 0;
+                @include resp();
             }
         }
         .phone{
+            width: 100px;
+            height: 100px;
+            img{
+                width: 70px;
+                height: 70px;
+            }
             .texts{
                 @include texts();
+                padding:  25px 18px 8px 0;
+                @include resp();
             }
         }
     }

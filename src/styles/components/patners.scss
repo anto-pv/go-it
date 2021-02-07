@@ -1,22 +1,26 @@
 #patner{
     width: 100%;
+    margin: auto;
     .heading{
         padding: 3% 0 3% 0;
         @include maintext;
     }
     .patner{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: space-between;
-        top: 376px;
-        width: 80%;
-        left:10%;
+        img{
+            padding-right: 10%;
+            @include respond(phone) {
+                padding-right: 0;
+            }
+        }
     }
     .column{
         flex: 100%;
     }
     .column img{
-        margin: 3% 4% 3% 4%;
+        margin: 3% 1% 3% 5%;
         vertical-align: middle;
     }
 }
