@@ -5,9 +5,11 @@ import shape from './svg/aboutshape.svg';
 const About = () => {
     return (
         <div id="aboutus">
-            <center className="about">About Us</center>
+            <span className="about">About Us</span>
+            <div className="img">
             <img src={aimage} className="abimage" alt="img loading" />
             <img className="shape" src={shape} alt="pallete"/>
+            </div>
         </div>
     );
 };

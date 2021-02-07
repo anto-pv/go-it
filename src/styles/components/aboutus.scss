@@ -1,7 +1,9 @@
 #aboutus{
     width: 100%;
-    background: #EFEFEF;
-    padding-bottom: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F9F4F5;
     @include respond(tab-land) {
         padding-bottom: 250px;
     }
@@ -15,27 +17,29 @@
         padding: 3% 0 3% 0;
         @include maintext;
     }
-    .shape{
-        width: 55%;
-        height: 55%;
-        float: right;
-        padding: 5% 0 0 0;
-        @include respond(tab-land) {
-            width: 63%;
-            height: 63%;
+    .img{
+        .shape{
+            width: 60%;
+            height: 60%;
+            float: right;
+            padding: 5% 0 2% 6%;
+            @include respond(tab-land) {
+                width: 63%;
+                height: 63%;
+            }
+            @include respond(tab-port) {
+                width: 63%;
+                height: 63%;
+            }
+            @include respond(phone) {
+                width: 62%;
+                height: 62%;
+            }
         }
-        @include respond(tab-port) {
-            width: 63%;
-            height: 63%;
+        .abimage{
+            width: 33%;
+            height: 33%;
+            padding: 5% 0 0 6%;
         }
-        @include respond(phone) {
-            width: 62%;
-            height: 62%;
-        }
-    }
-    .abimage{
-        width: 33%;
-        height: 33%;
-        padding: 5% 0 0 6%;
     }
 }

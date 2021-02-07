@@ -1,5 +1,6 @@
 import About from './components/aboutus';
 import Contact from './components/contactus';
+import Eventd from './components/eventdet';
 import Header from './components/header';
 import Landing from './components/landing';
 import Patner from './components/patners';
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
       <Header/>
       <Landing/>
+      <Eventd/>
       <About/>
       <Previous/>
       <Patner/>

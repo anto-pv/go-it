@@ -8,18 +8,23 @@
         #navbarSupportedContent{
             margin-left: 40%;
             justify-content: space-between;
-            font-family: Roboto;
+            font-family: $fontfam;
             font-weight: bolder;
             font-size: 18px;
             line-height: 21px;
             color: #000000;
-            #ulc{
+            .navbarulc{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 width: 100%;
+                list-style-type: none;  
+                text-decoration: none;
                 padding-right: 8%;
-                color: #000000;
+                padding-top: 4%;
+                font-family: $fontfam;
+                font-weight: bolder;
+                font-size: 18px;
             }
         }
     }
@@ -28,4 +33,8 @@
         height: 56px;
         padding-left: 3%;
     }
+    a, a:hover, a:focus, a:active {
+        text-decoration: none;
+        color: inherit;
+   }
 }

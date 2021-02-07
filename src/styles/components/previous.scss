@@ -1,23 +1,74 @@
 #previous{
+    display: flex;
+    flex-direction: column;
     background-color: #1B1B1E;
     align-items: center;
+    justify-content: center;
+    width: 100%;
     .heading{
-        padding: 2% 0 5% 0;
+        padding: 2% 0 15% 0;
         @include maintext;
     }
-    img{
+    .itext{
+        display: flex;
+        flex-direction: row;
         align-items: center;
-        @include respond(tab-land) {
-            width: 80%;
-            height: 80%;
-        }
+        justify-content: center;
         @include respond(tab-port) {
-            width: 70%;
-            height: 70%;
+            flex-direction: column;
+            padding-bottom: 5%;
         }
         @include respond(phone) {
-            width: 60%;
-            height: 60%;
+            flex-direction: column;
+            padding-bottom: 5%;
+        }
+        .textr{
+            width: 40%;
+            font-style: normal;
+            flex-direction: column;
+            color: #F9F4F5;
+            font-family:$fontfam;
+            .f{
+                font-size: 36px;
+                font-weight: bolder;
+            }
+            .s{
+                font-weight: normal;
+                font-size: 18px;
+            }
+            .t{
+                width: 70%;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 21px;
+            }
+            @include respond(tab-port) {
+                width: 90%;
+                text-align:center;
+                .t{
+                    width: 100%;
+                }
+            }
+            @include respond(phone) {
+                width: 90%;
+                text-align:center;
+                .t{
+                    width: 100%;
+                }
+            }
+        }
+        .car{
+            @include respond(tab-land) {
+                width: 40%;
+            }
+            @include respond(tab-port) {
+                width: 70%;
+            }
+            @include respond(phone) {
+                width: 70%;
+
+            }
+            
         }
     }
     .feedback{
@@ -48,7 +99,7 @@
     }
     .interns{
         padding: 4% 0 7% 0;
-        img{
+        #smile{
             width: 60px;
             height: 60px;
             padding-right: 2px;

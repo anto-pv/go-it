@@ -1,15 +1,15 @@
 #landing{
     width: 100%;
     font-weight: 900;
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontfam;
     background: radial-gradient(50% 50% at 50% 50%, rgba(0, 124, 199, 0.78) 0%, #007CC7 100%);
     display: flex;
     flex-direction: row;
     @include respond(tab-port) {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     @include respond(phone) {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .register{
         display: flex;
@@ -22,19 +22,15 @@
             size: 85%;
             @include respond(big-desktop) {
                 width: 90%;
-                height: 90%;
             }
             @include respond(tab-land) {
                 width: 70%;
-                height: 70%;
             }
             @include respond(tab-port) {
-                width: 60%;
-                height: 60%;
+                width: 90%;
             }
             @include respond(phone) {
-                width: 60%;
-                height: 60%;
+                width: 90%;
             }
         }
         a{
@@ -56,6 +52,10 @@
                 font-size: 9px;
             }
         }
+        a:hover {
+            background:  #f3c66b;
+            border-radius: 7px;
+        }
     }
     .mimage{
         padding: 10% 0 3% 10%;
@@ -66,17 +66,14 @@
         }
         @include respond(tab-land) {
             width: 50%;
-            height: 50%;
             padding: 15% 0 5% 7%;
         }
         @include respond(tab-port) {
-            width: 80%;
-            height: 80%;
+            width: 90%;
             padding: 0 0 5% 5%;
         }
         @include respond(phone) {
-            width: 70%;
-            height: 70%;
+            width: 90%;
             padding: 0 0 5% 5%;
         }
     }
