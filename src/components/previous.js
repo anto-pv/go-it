@@ -18,7 +18,7 @@ const Previous = () => {
       if(seconds<75){
         interval = setInterval(() => {
           setSeconds(seconds => seconds + 1);
-        }, 100);
+        }, 50);
       } else {
         clearInterval(interval);
       }
