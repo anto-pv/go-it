@@ -55,6 +55,9 @@
             font-size: 25px;
             text-align: justify;
             color: black;
+            @include respond(tab-land) {
+                font-size: 15px;
+            }
             @include respond(tab-port) {
                 width:90%;
                 font-size: 15px;

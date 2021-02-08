@@ -10,7 +10,7 @@ const Contact = () => {
             <center className="frame">
                 <div className="mail" ><img src={mail} alt="mail"/><span className="texts">goitinternships@gmail.com</span></div>
                 <div className="linkedin" ><img src={linkedin} alt="linkedin"/><a className="texts" href="https://linkedin.com">goitinc</a></div>
-                <div className="phone" ><img src={phone} alt="phone"/><span className="texts">9656987236</span></div>
+                <div className="phone" ><img src={phone} alt="phone"/><span className="texts">+919745675937</span></div>
             </center>
         </div>
     );

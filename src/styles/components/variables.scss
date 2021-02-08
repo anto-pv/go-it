@@ -6,6 +6,7 @@ $fontfam : 'Roboto', sans-serif;
     font-size: 48px;
     line-height: 56px;
     color: #007CC7;
+    margin-top: 1%;
 }
 @mixin resp() {
     @include respond(tab-land) {
