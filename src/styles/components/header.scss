@@ -25,6 +25,12 @@
                 font-family: $fontfam;
                 font-weight: bolder;
                 font-size: 18px;
+                @include respond(tab-port) {
+                    flex-direction: column;
+                }
+                @include respond(phone) {
+                    flex-direction: column;
+                }
             }
         }
     }

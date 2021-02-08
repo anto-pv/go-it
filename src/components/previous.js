@@ -8,6 +8,7 @@ const Previous = () => {
     const [isActive, setIsActive] = useState(false);
     function reset() {
       setSeconds(0);
+      setIsActive(false);
     }
     function toggle() {
         setIsActive(!isActive);

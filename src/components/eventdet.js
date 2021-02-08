@@ -1,14 +1,23 @@
 import React from 'react';
+import imgs from './svg/mdm.png';
 
 const Eventd = () => {
     return (
         <div id="event">
-            <p className="heading">"Everything is designed. Few things are designed well."— Brian Reed</p>
+            <p className="heading">Modern Manufacturing &amp;
+Inventive Design Internship</p>
             <div className="rows">
-                <p><span className="tbold"> Afraid you don't have the expertise in the technical skills required for your dream job?<br/></span>
-                Interact with our Experts working in Industries and learn with us to redesign yourselves with the latest Technologies.</p>
-                <p><span className="tbold">Get Certified and Prepare yourself for Industry 4.0.<br/></span>
-                We promote Project based learnings, whereby you can apply all what you learn with your friends or team and get Certified doing the same.</p>
+                <div className="text"><p className="qot">"Everything is designed. Few things are designed well."— Brian Reed</p>
+                <ul>
+                    <li>Online Virtual Internship</li>
+                    <li>Training by Industry Experts</li>
+                    <li>Project Based learning</li>
+                    <li>Flexible Timing</li>
+                    <li>3 CAD Softwares in 10 Days</li>
+                </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdHXwn-VPj6_dWlFl40KXVunNE7CIVkeTeJHS3dATuWPGxByw/viewform" className="btn">Register Now</a>
+                </div>
+                <img src={imgs} alt ="mdm" />
             </div>
         </div>
     );
