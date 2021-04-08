@@ -50,7 +50,7 @@ const Previous = () => {
                 </div>
                 <img src={car} className="car" alt="car"/>
             </div>
-            <span className="feedback"><p>Amazing Sessions. Loved working with my friends on the Project." - Karthik Radhakrishnan</p>
+            <span className="feedback"><p>"Amazing Sessions. Loved working with my friends on the Project." - Karthik Radhakrishnan</p>
             <p>"Student friendly Trainers and very informative interactions. Thank you Go iT." - Alby Shajan</p>
             <p>"Well Worth the Time, Effort and Money" - Vyshak Philip</p></span>
             <div className="interns"><img src={smile} id="smile" alt="smile"/>&nbsp;{seconds} Happy Interns</div>
