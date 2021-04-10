@@ -4,8 +4,7 @@ import Contact from './contactus';
 import Eventd from './eventdet';
 import About from './aboutus';
 
-const Interns = () => {
-    return (
+const Interns = () => (
         <div id="interns">
             <Header/>
             <Eventd/>
@@ -13,5 +12,4 @@ const Interns = () => {
             <Contact/>
         </div>
     );
-};
 export default Interns;

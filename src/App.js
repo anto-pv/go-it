@@ -21,13 +21,27 @@ function App() {
         <Patner/>
         <Contact />
         <footer>
-          <center><a href="#header" className="up">^</a></center>
+          Go-IT@2021
+          <div className="sitemap">
+            <u>sitemap</u>
+            <ul><li><a href="#header">Home</a></li>
+            <li><a href="#aboutus">About us</a></li>
+            <li><a href="/">Workshops</a></li>
+            <li><a href="/interns">Internships</a></li></ul>
+          </div>
         </footer>
         </Route>
         <Route path="/interns" exact>
           <Interns/>
           <footer>
-          <center><a href="#header" className="up">^</a></center>
+          Go-IT@2021
+          <div className="sitemap">
+            <u>sitemap</u>
+            <ul><li><a href="#header">Home</a></li>
+            <li><a href="#aboutus">About us</a></li>
+            <li><a href="/">Workshops</a></li>
+            <li><a href="/interns">Internships</a></li></ul>
+          </div>
         </footer>
         </Route>
     </div>

@@ -1,3 +1,4 @@
+//this page contains the style of landing aboutus previous and patner
 #landing{
     width: 100%;
     font-weight: 900;
@@ -16,40 +17,37 @@
         flex-direction: column;
         float: left;
         padding: 5% 0 5% 5%;
-        .text{
-            position: relative;
-            padding: 2% 0 0 8%;
-            size: 85%;
-            @include respond(big-desktop) {
-                width: 90%;
-            }
-            @include respond(tab-land) {
-                width: 70%;
-            }
-            @include respond(tab-port) {
-                width: 90%;
-            }
-            @include respond(phone) {
-                width: 90%;
-            }
+        @include maintext;
+        color: white;
+        font-size: 90px;
+        line-height: 100px;
+        @include respond(tab-land) {
+            font-size: 80px;
+            line-height: 80px;
+        }
+        @include respond(tab-port) {
+            font-size: 65px;
+            line-height: 70px;
+        }
+        @include respond(phone) {
+            font-size: 60px;
+            line-height: 60px;
         }
         a{
-            margin: 5% 0 0 7%;
-            width: 200px;
+            margin: 5% 0 0 2%;
+            width: 250px;
             height: 49.94px;
             background: #FFAD05;
             border-radius: 4px;
             font-weight: bolder;
             font-size: 19px;
             @include respond(tab-port) {
-                width: 150px;
-                height: 39.94px;
-                font-size: 15px;
+                width: 200px;
+                font-size: 16px;
             }
             @include respond(phone) {
-                width: 100px;
-                height: 29.94px;
-                font-size: 9px;
+                width: 200px;
+                font-size: 15px;
             }
         }
         a:hover {
@@ -66,16 +64,299 @@
         }
         @include respond(tab-land) {
             width: 50%;
-            padding: 15% 0 5% 7%;
+            padding: 15% 0 5% 2%;
         }
         @include respond(tab-port) {
-            width: 90%;
+            width: 80%;
             padding: 0 0 5% 5%;
         }
         @include respond(phone) {
-            width: 90%;
+            width: 80%;
             padding: 0 0 5% 5%;
         }
     }
-    
+}
+#aboutus{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F9F4F5;
+    padding-bottom: 50px;
+    .about{
+        padding: 3% 0 0 0;
+        @include maintext;
+    }
+    .cont{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 4%;
+        @include respond(tab-land) {
+            flex-direction: column;
+        }
+        @include respond(tab-port) {
+            flex-direction: column;
+        }
+        @include respond(phone) {
+            flex-direction: column;
+        }
+        .shape{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60%;
+            font-family: $fontfam;
+            font-size: 24px;
+            line-height: 28px;
+            color: #007CC7;
+            padding-right: 3%;
+            padding-top: 3%;
+            @include respond(tab-land) {
+                font-size: 20px;
+                text-align: center;
+                width: 78%;
+                line-height: 25px;
+                padding-right: 0;
+            }
+            @include respond(tab-port) {
+                font-size: 16px;
+                text-align: center;
+                width: 78%;
+                line-height: 25px;
+                padding-right: 0;
+            }
+            @include respond(phone) {
+                font-size: 16px;
+                text-align: center;
+                line-height: 22px;
+                width: 78%;
+            }
+            .row{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                color: black;
+                font-size: 20px;
+                padding: 7% 1% 4% 0;
+                text-align: center;
+                p{
+                    width:50%;
+                    @include respond(tab-land) {
+                        width:90%;
+                        font-size: 16px;
+                    }
+                    @include respond(tab-port) {
+                        width:90%;
+                        font-size: 16px;
+                    }
+                    @include respond(phone) {
+                        width:90%;
+                        font-size: 15px;
+                    }
+                }
+                .tbold{
+                    font-size: 22px;
+                    font-weight: bolder;
+                    @include respond(tab-port) {
+                        width:90%;
+                        font-size: 17px;
+                    }
+                    @include respond(phone) {
+                        width:90%;
+                        font-size: 17px;
+                    }
+                }
+                @include respond(tab-land) {
+                    padding: 7% 0 4% 0;
+                    flex-direction: column;
+                }
+                @include respond(tab-port) {
+                    padding: 7% 0 4% 0;
+                    flex-direction: column;
+                }
+                @include respond(phone) {
+                    padding: 7% 0 4% 0;
+                    flex-direction: column;
+                }
+            }
+        }
+        .abimage{
+            @include respond(tab-port) {
+                width: 70%;
+            }
+            @include respond(phone) {
+                width: 70%;
+            }
+        }
+    }
+}
+#previous{
+    display: flex;
+    flex-direction: column;
+    background-color: #1B1B1E;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    .heading{
+        padding: 2% 0 3% 0;
+        @include maintext;
+    }
+    .itext{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        @include respond(tab-port) {
+            flex-direction: column;
+            padding-bottom: 5%;
+        }
+        @include respond(phone) {
+            flex-direction: column;
+            padding-bottom: 5%;
+        }
+        .textr{
+            width: 40%;
+            font-style: normal;
+            flex-direction: column;
+            color: #F9F4F5;
+            font-family:$fontfam;
+            .f{
+                font-size: 36px;
+                font-weight: bolder;
+            }
+            .s{
+                font-weight: normal;
+                font-size: 18px;
+            }
+            .t{
+                width: 70%;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 21px;
+            }
+            @include respond(tab-port) {
+                width: 90%;
+                text-align:center;
+                .t{
+                    width: 100%;
+                }
+            }
+            @include respond(phone) {
+                width: 90%;
+                text-align:center;
+                .t{
+                    width: 100%;
+                }
+            }
+        }
+        .car{
+            @include respond(tab-land) {
+                width: 40%;
+            }
+            @include respond(tab-port) {
+                width: 70%;
+            }
+            @include respond(phone) {
+                width: 70%;
+
+            }
+            
+        }
+    }
+    .feedback{
+        display: flex;
+        flex-direction: row;
+        padding: 5% 0 5% 0;
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        color: #F9F4F5;
+        @include respond(tab-port) {
+            flex-direction: column;
+            font-size: 19px;
+        }
+        @include respond(phone) {
+            flex-direction: column;
+            font-size: 17px;
+        }
+        p{
+            padding-right: 7%;
+            padding-left: 5%;
+        }
+    }
+    .interns{
+        padding-bottom: 5%;
+        #smile{
+            width: 60px;
+            height: 60px;
+            padding-right: 2px;
+            @include respond(tab-land) {
+                width: 50px;
+                height: 50px;
+            }
+            @include respond(tab-port) {
+                width: 40px;
+                height: 40px;
+            }
+            @include respond(phone) {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        color: #FFAD05;
+        @include respond(tab-land) {
+            font-size: 19px;
+        }
+        @include respond(tab-port) {
+            flex-direction: column;
+            font-size: 17px;
+        }
+        @include respond(phone) {
+            flex-direction: column;
+            font-size: 15px;
+        }
+    }
+}
+#patner{
+    width: 100%;
+    .patner{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        .heading{
+            padding: 2% 0 2% 0;
+            @include maintext;
+            margin-top: 0%;
+        }
+        .column{
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            justify-content: space-between;
+            @include respond(tab-port) {
+                flex-direction: column;
+                padding-bottom: 5%;
+            }
+            @include respond(phone) {
+                flex-direction: column;
+                padding-bottom: 5%;
+            }
+        }
+    }
+    .column img{
+        max-width: 200px;
+        margin: 3% 0 3% 0;
+        vertical-align: middle;
+    }
 }

@@ -1,45 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import car from './svg/previousimg.svg';
 import smile from './svg/smile.svg';
 
-const Previous = () => {
-    var k =1;
-    const [seconds, setSeconds] = useState(0);
-    const [isActive, setIsActive] = useState(false);
-    function reset() {
-      setSeconds(0);
-      setIsActive(false);
-    }
-    function toggle() {
-        setIsActive(!isActive);
-      }
-    useEffect(() => {
-      let interval = null;
-      if(seconds<75){
-        interval = setInterval(() => {
-          setSeconds(seconds => seconds + 1);
-        }, 50);
-      } else {
-        clearInterval(interval);
-      }
-      return () => clearInterval(interval);
-    }, [seconds]);
-    window.addEventListener("scroll", function(event) {
-        var offsets = document.getElementById('smile').getBoundingClientRect();
-        var smiletop = offsets.top;
-        if(smiletop>700){
-            k=1;
-            reset();
-        }
-        else if(smiletop<700 && k===1){
-            k = 0;
-            toggle();
-        }
-        else{
-            k=0;
-        }  
-    }, false);
-    return (
+const Previous = () => (
         <div id="previous">
             <span className="heading">Previous</span>
             <div className="itext">
@@ -50,11 +13,10 @@ const Previous = () => {
                 </div>
                 <img src={car} className="car" alt="car"/>
             </div>
-            <span className="feedback"><p>"Amazing Sessions. Loved working with my friends on the Project." - Karthik Radhakrishnan</p>
-            <p>"Student friendly Trainers and very informative interactions. Thank you Go iT." - Alby Shajan</p>
-            <p>"Well Worth the Time, Effort and Money" - Vyshak Philip</p></span>
-            <div className="interns"><img src={smile} id="smile" alt="smile"/>&nbsp;{seconds} Happy Interns</div>
+            <span className="feedback"><p><i>"Amazing Sessions. Loved working with my friends on the Project."</i> &nbsp;- Karthik Radhakrishnan</p>
+            <p><i>"Student friendly Trainers and very informative interactions. Thank you Go iT."</i> &nbsp; - Alby Shajan</p>
+            <p><i>"Well Worth the Time, Effort and Money"</i> &nbsp; - Vyshak Philip</p></span>
+            <div className="interns"><img src={smile} id="smile" alt="smile"/>&nbsp;75 Happy Interns</div>
         </div>
     );
-};
 export default Previous;
