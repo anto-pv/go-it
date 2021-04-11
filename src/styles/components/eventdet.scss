@@ -5,6 +5,8 @@
     align-items: center;
     background: #EFEFEF;
     text-align:center;
+    font-size: 30px;
+    padding-top: 1%;
     padding-bottom: 4%;
     .slides{
         padding-left: 10%;
@@ -23,6 +25,7 @@
             @include maintext;
             padding: 3% 0 1% 0;
             color: black;
+            margin-top: 0;
             @include respond(tab-land) {
                 margin-bottom: 0;
             }
@@ -92,9 +95,14 @@
                     line-height: 2;
                 }
             }
+            .buttons{
+                display: flex;
+                flex-direction: row;
+            }
             a{
+                
                 float: left;
-                margin: 5% 0 0 18%;
+                margin: 5% 1% 0 15%;
                 width: 200px;
                 height: 49.94px;
                 background: #FFAD05;
@@ -103,14 +111,14 @@
                 font-size: 19px;
                 @include respond(tab-port) {
                     float: none;
-                    margin: 1% 50% 0 0;
+                    margin: 1% 18% 0 0;
                     width: 130px;
                     height: 39px;
                     font-size: 14px;
                 }
                 @include respond(phone) {
                     float: none;
-                    margin: 2% 50% 0 0;
+                    margin: 2% 1% 0 15%;
                     width: 90px;
                     height: 29px;
                     font-size: 9px;

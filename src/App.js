@@ -32,7 +32,9 @@ function App() {
         </footer>
         </Route>
         <Route path="/interns" exact>
+          <Header/>
           <Interns/>
+          <Contact/>
           <footer>
           Go-IT@2021
           <div className="sitemap">

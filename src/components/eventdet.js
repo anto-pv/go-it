@@ -6,6 +6,7 @@ import img3 from './svg/bim2.jpg';
 const Eventd = () => {
     return (
         <div id="event">
+            <b>Upcoming Internships</b>
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -23,9 +24,12 @@ const Eventd = () => {
                                     <li>Training by Industry Experts</li>
                                     <li>Project Based learning</li>
                                     <li>Flexible Timing</li>
-                                    <li>3 CAD Softwares in 10 Days</li>
+                                    <li>Placment Offers</li>
                                 </ul>
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdHXwn-VPj6_dWlFl40KXVunNE7CIVkeTeJHS3dATuWPGxByw/viewform" className="btn">Register Now</a>
+                                <div className="buttons">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdHXwn-VPj6_dWlFl40KXVunNE7CIVkeTeJHS3dATuWPGxByw/viewform" target="_blank" rel="noopener noreferrer" className="btn">Register Now</a>
+                                <a href="/interns" target="_blank" rel="noopener noreferrer" className="btn">Know more</a>
+                                </div>
                                 </div>
                                 <img src={imgs} alt ="mdm" />
                             </div>
@@ -41,9 +45,12 @@ const Eventd = () => {
                                     <li>Training by Industry Experts</li>
                                     <li>Project Based learning</li>
                                     <li>Flexible Timing</li>
-                                    <li>3 CAD Softwares in 10 Days</li>
+                                    <li>Placment Offers</li>
                                 </ul>
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdHXwn-VPj6_dWlFl40KXVunNE7CIVkeTeJHS3dATuWPGxByw/viewform" className="btn">Register Now</a>
+                                <div className="buttons">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdHXwn-VPj6_dWlFl40KXVunNE7CIVkeTeJHS3dATuWPGxByw/viewform" target="_blank" rel="noopener noreferrer" className="btn">Register Now</a>
+                                <a href="/interns" target="_blank" rel="noopener noreferrer" className="btn">Know more</a>
+                                </div>
                                 </div>
                                 <img src={img3} alt ="img3" />
                             </div>
@@ -59,9 +66,12 @@ const Eventd = () => {
                                 <li>Training by Industry Experts</li>
                                 <li>Project Based learning</li>
                                 <li>Flexible Timing</li>
-                                <li>3 CAD Softwares in 10 Days</li>
+                                <li>Placment Offers</li>
                             </ul>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdHXwn-VPj6_dWlFl40KXVunNE7CIVkeTeJHS3dATuWPGxByw/viewform" className="btn">Register Now</a>
+                            <div className="buttons">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdHXwn-VPj6_dWlFl40KXVunNE7CIVkeTeJHS3dATuWPGxByw/viewform" target="_blank" rel="noopener noreferrer" className="btn">Register Now</a>
+                                <a href="/interns" target="_blank" rel="noopener noreferrer" className="btn">Know more</a>
+                                </div>
                             </div>
                         <img src={img2} alt ="img2" />
                          </div>
