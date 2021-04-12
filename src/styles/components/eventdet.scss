@@ -127,6 +127,10 @@
             a:hover {
                 background:  #f3c66b;
                 border-radius: 7px;
+                text-decoration: underline;
+            }
+            #know{
+                background: none;
             }
             .qot{
                 @include maintext;

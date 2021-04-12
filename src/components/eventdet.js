@@ -27,8 +27,8 @@ const Eventd = () => {
                                     <li>Placment Offers</li>
                                 </ul>
                                 <div className="buttons">
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdHXwn-VPj6_dWlFl40KXVunNE7CIVkeTeJHS3dATuWPGxByw/viewform" target="_blank" rel="noopener noreferrer" className="btn">Register Now</a>
-                                <a href="/interns" target="_blank" rel="noopener noreferrer" className="btn">Know more</a>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdHXwn-VPj6_dWlFl40KXVunNE7CIVkeTeJHS3dATuWPGxByw/viewform" target="_blank" rel="noopener noreferrer" className="btn">Comming Soon</a>
+                                <a id="know" href="/interns" target="_blank" rel="noopener noreferrer" className="btn">Know more</a>
                                 </div>
                                 </div>
                                 <img src={imgs} alt ="mdm" />
@@ -48,8 +48,8 @@ const Eventd = () => {
                                     <li>Placment Offers</li>
                                 </ul>
                                 <div className="buttons">
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdHXwn-VPj6_dWlFl40KXVunNE7CIVkeTeJHS3dATuWPGxByw/viewform" target="_blank" rel="noopener noreferrer" className="btn">Register Now</a>
-                                <a href="/interns" target="_blank" rel="noopener noreferrer" className="btn">Know more</a>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdHXwn-VPj6_dWlFl40KXVunNE7CIVkeTeJHS3dATuWPGxByw/viewform" target="_blank" rel="noopener noreferrer" className="btn">Comming Soon</a>
+                                <a id="know" href="/interns" target="_blank" rel="noopener noreferrer" className="btn">Know more</a>
                                 </div>
                                 </div>
                                 <img src={img3} alt ="img3" />
@@ -69,8 +69,8 @@ const Eventd = () => {
                                 <li>Placment Offers</li>
                             </ul>
                             <div className="buttons">
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdHXwn-VPj6_dWlFl40KXVunNE7CIVkeTeJHS3dATuWPGxByw/viewform" target="_blank" rel="noopener noreferrer" className="btn">Register Now</a>
-                                <a href="/interns" target="_blank" rel="noopener noreferrer" className="btn">Know more</a>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdHXwn-VPj6_dWlFl40KXVunNE7CIVkeTeJHS3dATuWPGxByw/viewform" target="_blank" rel="noopener noreferrer" className="btn">Comming Soon</a>
+                                <a id="know" href="/interns" target="_blank" rel="noopener noreferrer" className="btn">Know more</a>
                                 </div>
                             </div>
                         <img src={img2} alt ="img2" />
